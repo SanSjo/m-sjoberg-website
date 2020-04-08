@@ -1,0 +1,110 @@
+/* The dropdown container */
+.dropdown {
+  overflow: visible;
+  height: 100%;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  background-color: inherit;
+  font: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: red;
+  border: 1px solid red;
+  opacity: 0.5;
+  color: black;
+  mask: black;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  left: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  height: 2000px;
+}
+
+/* Mega Menu header, if needed */
+.dropdown-content .header {
+  background: red;
+  padding: 16px;
+  color: white;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+  height: 100%;
+}
+
+/* Create three equal columns that floats next to each other */
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.column {
+  display: flex;
+  flex-direction: column;
+  width: 23%;
+  padding: 10px;
+  background-color: white;
+  height: 600px;
+  border: 1px solid black;
+  overflow: scroll;
+}
+
+.column h3 {
+  font-size: 15px;
+}
+
+/* Style links inside the columns */
+.column a {
+  color: black;
+  padding: 5px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 15px;
+  line-height: 20px;
+  width: 50%;
+  border-bottom: 1px dotted #332d77;
+}
+
+.productImg {
+  width: 50%;
+}
+
+.productText {
+}
+
+hr {
+  border-top: 1px dotted #332d77;
+}
+
+/* Add a background color on hover */
+.column a:hover {
+  background-color: #ddd;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
