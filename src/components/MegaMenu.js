@@ -17,109 +17,109 @@ export const MegaMenu = () => {
           <div className="column">
             <h3>KOMMUNIKATION</h3>
             <a className="product" href="#">
-              <img className="productImg" src={Parrot} alt="animering" />{' '}
               <p className="productText">Parrot MKi9200</p>
+              <img className="productImg" src={Parrot} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={Sena} alt="animering" />{' '}
               <p className="productText">Sena Tufftalk Lite Headset</p>
+              <img className="productImg" src={Sena} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={Telit} alt="animering" />{' '}
               <p className="productText">Telit Handsfree</p>
+              <img className="productImg" src={Telit} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={GPro} alt="animering" />{' '}
               <p className="productText">Professionell 4G WiFi Router</p>
+              <img className="productImg" src={GPro} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={Carcomm} alt="animering" />
               <p className="productText">Carcomm DASH2 mobilhållare</p>
+              <img className="productImg" src={Carcomm} alt="animering" />
             </a>
           </div>
           <div className="column">
             <h3>STÖLDSKYDD</h3>
             <a className="product" href="#">
-              <img className="productImg" src={Parrot} alt="animering" />{' '}
               <p className="productText">Parrot MKi9200</p>
+              <img className="productImg" src={Parrot} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={Sena} alt="animering" />{' '}
               <p className="productText">Sena Tufftalk Lite Headset</p>
+              <img className="productImg" src={Sena} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={Telit} alt="animering" />{' '}
               <p className="productText">Telit Handsfree</p>
+              <img className="productImg" src={Telit} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={GPro} alt="animering" />{' '}
               <p className="productText">Professionell 4G WiFi Router</p>
+              <img className="productImg" src={GPro} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={Carcomm} alt="animering" />
               <p className="productText">Carcomm DASH2 mobilhållare</p>
+              <img className="productImg" src={Carcomm} alt="animering" />
             </a>
           </div>
           <div className="column">
             <h3>BACKVARNING</h3>
             <a className="product" href="#">
-              <img className="productImg" src={Parrot} alt="animering" />{' '}
               <p className="productText">Parrot MKi9200</p>
+              <img className="productImg" src={Parrot} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={Sena} alt="animering" />{' '}
               <p className="productText">Sena Tufftalk Lite Headset</p>
+              <img className="productImg" src={Sena} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={Telit} alt="animering" />{' '}
               <p className="productText">Telit Handsfree</p>
+              <img className="productImg" src={Telit} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={GPro} alt="animering" />{' '}
               <p className="productText">Professionell 4G WiFi Router</p>
+              <img className="productImg" src={GPro} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={Carcomm} alt="animering" />
               <p className="productText">Carcomm DASH2 mobilhållare</p>
+              <img className="productImg" src={Carcomm} alt="animering" />
             </a>
           </div>
           <div className="column">
             <h3>ÖVRIGT</h3>
             <a className="product" href="#">
-              <img className="productImg" src={Parrot} alt="animering" />{' '}
               <p className="productText">Parrot MKi9200</p>
+              <img className="productImg" src={Parrot} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={Sena} alt="animering" />{' '}
               <p className="productText">Sena Tufftalk Lite Headset</p>
+              <img className="productImg" src={Sena} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={Telit} alt="animering" />{' '}
               <p className="productText">Telit Handsfree</p>
+              <img className="productImg" src={Telit} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={GPro} alt="animering" />{' '}
               <p className="productText">Professionell 4G WiFi Router</p>
+              <img className="productImg" src={GPro} alt="animering" />{' '}
             </a>
             <hr />
             <a href="#">
-              <img className="productImg" src={Carcomm} alt="animering" />
               <p className="productText">Carcomm DASH2 mobilhållare</p>
+              <img className="productImg" src={Carcomm} alt="animering" />
             </a>
           </div>
         </div>

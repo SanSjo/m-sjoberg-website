@@ -1,5 +1,6 @@
 import React from 'react';
 import './styles/header.css';
+import NavMeny from './NavMenu';
 
 export const Header = () => {
   return (
@@ -17,11 +18,12 @@ export const Header = () => {
           </li>
         </ul>
       </div>
+      <NavMeny />
     </main>
   );
 };
 
-/* <section>
+/* <section className="headerCards">
   <div className="card card-image">
     {/* <!-- Content -->
     <div className="text-white text-center d-flex align-items-center rgba-black-strong py-5 px-4">

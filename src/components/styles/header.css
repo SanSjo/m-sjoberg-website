@@ -1,10 +1,24 @@
+main {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1;
+  height: 50px;
+
+  margin: 0;
+}
+
 .topMenuContainer {
   border-bottom: 1px solid black;
+  background: white;
 }
 ul {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  align-items: center;
+  height: 60px;
+  margin: 0;
 }
 
 li {
@@ -31,4 +45,15 @@ li {
   width: 60%;
   font-size: 14px;
   color: white;
+}
+
+@media (max-width: 600px) {
+  main {
+    position: relative;
+    width: 600px;
+  }
+
+  .topMenuContainer {
+    display: none;
+  }
 }

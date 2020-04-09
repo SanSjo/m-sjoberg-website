@@ -19,11 +19,10 @@
 /* Add a red background color to navbar links on hover */
 .navbar a:hover,
 .dropdown:hover .dropbtn {
-  background-color: red;
-  border: 1px solid red;
   opacity: 0.5;
-  color: black;
+  color: red;
   mask: black;
+  font-weight: bold;
 }
 
 /* Dropdown content (hidden by default) */
@@ -31,9 +30,8 @@
   display: none;
   position: absolute;
   background-color: white;
-  width: 100%;
+  width: 80%;
   left: 0;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   height: 2000px;
 }
@@ -49,6 +47,10 @@
 .dropdown:hover .dropdown-content {
   display: block;
   height: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 80%;
+  background-color: transparent;
 }
 
 /* Create three equal columns that floats next to each other */
@@ -56,16 +58,19 @@
 .row {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
+  /* box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.2); */
 }
 .column {
   display: flex;
   flex-direction: column;
-  width: 23%;
+  width: 20%;
   padding: 10px;
   background-color: white;
   height: 600px;
-  border: 1px solid black;
   overflow: scroll;
 }
 
