@@ -6,14 +6,14 @@ export const Header = () => {
   return (
     <main>
       <div className="topMenuContainer">
-        <ul>
-          <li className="topMenu">
+        <ul className="topMenu">
+          <li className="topMenuList">
             <i className="fas fa-phone" /> 08-5678904
           </li>
-          <li className="topMenu">
+          <li className="topMenuList">
             <i className="fa fa-at" /> info@msjoberg.se
           </li>
-          <li className="topMenu">
+          <li className="topMenuList">
             <i className="fa fa-envelope" /> Råsundavägen 79, Solna
           </li>
         </ul>

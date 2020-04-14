@@ -17,7 +17,7 @@
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover,
+.navbar p:hover,
 .dropdown:hover .dropbtn {
   opacity: 0.5;
   color: red;

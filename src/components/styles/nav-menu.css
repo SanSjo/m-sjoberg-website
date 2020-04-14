@@ -37,9 +37,19 @@ nav {
   text-decoration: none;
 }
 
+.nav-button {
+  text-decoration: none;
+}
+
+.active {
+  color: red
+}
+
 .mobile-container {
   display: none;
 }
+
+
 
 @media (max-width: 600px) {
   .navbar {
@@ -60,6 +70,7 @@ nav {
 
   .topNav {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: flex-end;
     width: 100%;
@@ -74,15 +85,13 @@ nav {
   .navBurger {
     width: 60px;
     height: 8px;
-    background: #000;
+    background: #fff;
     border-radius: 5px;
     margin-left: 3%;
     margin: 10px;
   }
 
   .myLinks {
-    display: flex;
-    flex-direction: column;
     background: white;
     padding: 10px;
     margin-top: 190%;

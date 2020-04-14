@@ -12,7 +12,7 @@ main {
   border-bottom: 1px solid black;
   background: white;
 }
-ul {
+.topMenu {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -21,7 +21,7 @@ ul {
   margin: 0;
 }
 
-li {
+.topMenuList {
   list-style-type: none;
 }
 
