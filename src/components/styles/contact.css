@@ -1,0 +1,19 @@
+.contact {
+	margin-top: 200px;
+	display: flex;
+	flex-direction: row;
+}
+
+.contact-info {
+	margin: 5%;
+	width: 30%;
+}
+
+.contact-team {
+	margin-top: 5%;
+	margin-left: 5%;
+}
+
+.team {
+	padding-bottom: 5%;
+}

@@ -1,9 +1,12 @@
+/* eslint-disable arrow-parens */
 import React from 'react';
 
 export const AntitheftProd = props => {
 	return (
 		<div className="productCards">
 			{/* <div className="hover-container">
+							// eslint-disable-next-line no-tabs
+
 							<button type="button" src="#" className="btn btn-primary">
 								MER INFO
 							</button>
