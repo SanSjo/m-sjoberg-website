@@ -16,80 +16,82 @@ const images = [img1, img2, img3];
 const autoPlay = 2;
 
 const Slider = () => {
-  const getWidth = () => window.innerWidth;
+	const getWidth = () => window.innerWidth;
 
-  const [state, setState] = useState({
-    activeIndex: 0,
-    translate: 0,
-    transition: 0.45,
-  });
+	const [state, setState] = useState({
+		activeIndex: 0,
+		translate: 0,
+		transition: 0.45
+	});
 
-  const { translate, transition, activeIndex } = state;
+	const { translate, transition, activeIndex } = state;
 
-  const autoPlayRef = useRef();
+	const autoPlayRef = useRef();
 
-  const nextSlide = () => {
-    if (activeIndex === images.length - 1) {
-      return setState({
-        ...state,
-        translate: 0,
-        activeIndex: 0,
-      });
-    }
+	const nextSlide = () => {
+		if (activeIndex === images.length - 1) {
+			return setState({
+				...state,
+				translate: 0,
+				activeIndex: 0
+			});
+		}
 
-    setState({
-      ...state,
-      activeIndex: activeIndex + 1,
-      translate: (activeIndex + 1) * getWidth(),
-    });
-  };
+		setState({
+			...state,
+			activeIndex: activeIndex + 1,
+			translate: (activeIndex + 1) * getWidth()
+		});
+	};
 
-  const prevSlide = () => {
-    if (activeIndex === 0) {
-      return setState({
-        ...state,
-        translate: (images.length - 1) * getWidth(),
-        activeIndex: images.length - 1,
-      });
-    }
+	const prevSlide = () => {
+		if (activeIndex === 0) {
+			return setState({
+				...state,
+				translate: (images.length - 1) * getWidth(),
+				activeIndex: images.length - 1
+			});
+		}
 
-    setState({
-      ...state,
-      translate: activeIndex - 1,
-      activeIndex: (activeIndex - 1) * getWidth(),
-    });
-  };
+		setState({
+			...state,
+			translate: activeIndex - 1,
+			activeIndex: (activeIndex - 1) * getWidth()
+		});
+	};
 
-  useEffect(() => {
-    autoPlayRef.current = nextSlide;
-  });
+	useEffect(() => {
+		autoPlayRef.current = nextSlide;
+	});
 
-  useEffect(() => {
-    const play = () => {
-      autoPlayRef.current();
-    };
-    const interval = setInterval(play, autoPlay * 3000);
-    return () => clearInterval(interval);
-  }, []);
+	useEffect(() => {
+		const play = () => {
+			autoPlayRef.current();
+		};
+		const interval = setInterval(play, autoPlay * 3000);
+		return () => clearInterval(interval);
+	}, []);
 
-  return (
-    <div className="sliderContainer">
-      <SliderContent
-        translate={translate}
-        transition={transition}
-        width={getWidth() * images.length}
-      >
-        {images.map((slide, i) => (
-          <Slide key={slide + i} content={slide} />
-        ))}
-      </SliderContent>
+	return (
+		<div className="slider">
+			<div className="sliderContainer">
+				<SliderContent
+					translate={translate}
+					transition={transition}
+					width={getWidth() * images.length}
+				>
+					{images.map((slide, i) => (
+						<Slide key={slide + i} content={slide} />
+					))}
+				</SliderContent>
 
-      <Arrow direction="left" handleClick={prevSlide} />
-      <Arrow direction="right" handleClick={nextSlide} />
+				<Arrow direction="left" handleClick={prevSlide} />
+				<Arrow direction="right" handleClick={nextSlide} />
 
-      <Dots slides={images} activeIndex={activeIndex} />
-    </div>
-  );
+				<Dots slides={images} activeIndex={activeIndex} />
+			</div>
+		</div>
+	);
 };
 
 export default Slider;

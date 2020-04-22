@@ -1,55 +1,52 @@
 .about {
-
-  background: lightblue;
-  margin: 170px 30px 0px 30px;
-  padding: 5%;
+	background: #f4f4f4;
+	margin: 170px 30px 0px 30px;
 }
 
 .header {
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
-
 .container {
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
- justify-content: center;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .about-container {
-  width: 40%;
-  padding: 5%;
-  
+	width: 35%;
+	padding: 3%;
+	background: white;
+	margin: 2%;
+	box-shadow: 2px 2px 4px grey;
 }
 
-
 .about-header {
-  text-align: center;
+	text-align: center;
 }
 
 .about-para {
-  text-align: justify;
+	text-align: justify;
+	line-height: 22px;
+	font-size: 16px;
 }
 
 .policy {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: start;
- 
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: start;
 }
 
 li.policy-list {
-  display: flex;
-  flex-direction: column;
-  list-style-type: circle;
-  color: black;
+	display: flex;
+	flex-direction: column;
+	list-style-type: circle;
+	color: black;
 }
 
 .policy-para {
-  text-align: left;
+	text-align: left;
 }
-
-

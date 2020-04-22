@@ -1,7 +1,12 @@
+.slider {
+	display: flex;
+	justify-content: center;
+}
+
 .sliderContainer {
-  position: relative;
-  height: 70vh;
-  width: 100vw;
-  overflow: hidden;
-  margin-top: 140px;
+	position: relative;
+	height: 70vh;
+	width: 90vw;
+	overflow: hidden;
+	margin-top: 200px;
 }

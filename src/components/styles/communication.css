@@ -1,0 +1,28 @@
+.products-container {
+	background: white;
+	padding: 10px;
+	margin: 5px;
+	display: flex;
+	flex-direction: row;
+	margin-top: 200px;
+}
+
+.sideMenu {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.products {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.productCards {
+	margin: 10px;
+}
+
+.card-img {
+	width: 300px;
+	height: 300px;
+}
