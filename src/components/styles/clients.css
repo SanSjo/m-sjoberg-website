@@ -1,34 +1,48 @@
 .brand-section {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin-bottom: 10%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10%;
 }
 
 .header-container {
-  display: flex;
-  justify-content: center;
-  width: 100%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
 }
 
 .brand-header {
+	background: darkblue;
+	color: white;
+	padding: 5px;
+	margin: 30px;
 }
 
-.brand-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+.brand-slider {
+	margin-left: 10px;
+}
+
+.brand-logo-slider {
+	margin-bottom: 10%;
 }
 
 .brand {
-  width: 18%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+	width: 70%;
+	height: 70px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	opacity: 1;
+	fill: grey;
+	padding-left: 30px;
+}
+
+.brand:hover {
+	opacity: 1;
 }
 
 .brand-logo {
-  width: 80%;
+	width: 100%;
+	height: 100%;
+	color: rgba(0, 0, 0, 0.247);
 }

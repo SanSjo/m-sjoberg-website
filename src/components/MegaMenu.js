@@ -7,21 +7,26 @@ import Sena from '../img/senaHeadset.jpg';
 import Telit from '../img/TelitHandsfree.jpg';
 import GPro from '../img/4G-PRO.jpg';
 import Carcomm from '../img/Carcomm.jpg';
+import { Categories } from './Categories';
 
 export const MegaMenu = () => {
 	return (
-		<div className="dropdown">
-			<button type="button" className=" dropbtn nav-button">
-				PRODUKTER <i className="fa fa-caret-down" />
-			</button>
-			<div className="dropdown-content">
-				<div className="row">
-					<DropdownContent title="Kommunikation" link="/Communication" />
-					<DropdownContent title="Stöldskydd" link="/Antitheft" />
-					<DropdownContent title="Backvarning" />
-					<DropdownContent title="Övrigt" />
-				</div>
-			</div>
-		</div>
+		<>
+			<Categories />
+		</>
+
+		// <div className="dropdown">
+		// 	<button type="button" className=" dropbtn nav-button">
+		// 		PRODUKTER <i className="fa fa-caret-down" />
+		// 	</button>
+		// 	<div className="dropdown-content">
+		// 		<div className="row">
+		// 			<DropdownContent title="Kommunikation" link="/Communication" />
+		// 			<DropdownContent title="Stöldskydd" link="/Antitheft" />
+		// 			<DropdownContent title="Backvarning" />
+		// 			<DropdownContent title="Övrigt" />
+		// 		</div>
+		// 	</div>
+		// </div>
 	);
 };

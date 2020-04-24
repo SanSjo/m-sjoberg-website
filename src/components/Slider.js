@@ -90,6 +90,15 @@ const Slider = () => {
 
 				<Dots slides={images} activeIndex={activeIndex} />
 			</div>
+			<div className="info-container">
+				<p className="info-text">
+					<strong>Ingeniörsfirman M.Sjöberg AB</strong> är sedan 1953 importör
+					och distributör av fordonselektriska produkter till fordonsindustrin
+					och eftermarknad. Vi uppfyller högt ställda krav och är
+					ISO-certifierade. Kontor, lager, support och service i egen fastighet
+					i Solna.
+				</p>
+			</div>
 		</div>
 	);
 };

@@ -1,6 +1,9 @@
 import React, { useRef } from 'react';
 import ReactDOM from 'react-dom';
+import dotenv from 'dotenv';
 import { useGoogleMap, useMap } from './MapHooks';
+
+dotenv.config();
 
 const API_KEY = 'AIzaSyA8rO8N0dvE7CC-4o80JeN5MRI5vJ9qkyY';
 

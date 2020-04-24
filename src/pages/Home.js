@@ -5,16 +5,17 @@ import Slider from '../components/Slider';
 import { HomeCards } from '../components/HomeCards';
 import { Footer } from '../components/Footer';
 import { Clients } from '../components/Clients';
+import { BrandSlider } from '../components/BrandSlider';
 
 export const Home = () => {
-  return (
-    <div>
-      <Header />
-
-      <Slider />
-      <HomeCards />
-      <Clients />
-      <Footer />
-    </div>
-  );
+	return (
+		<div>
+			<Header />
+			<Slider />
+			<HomeCards title="VÅRA PRODUKTER" />
+			<BrandSlider />
+			<HomeCards title="VÅRT ARBETE" />
+			<Footer />
+		</div>
+	);
 };

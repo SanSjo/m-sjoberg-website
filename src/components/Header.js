@@ -1,26 +1,36 @@
 import React from 'react';
 import './styles/header.css';
+import { Link } from 'react-router-dom';
 import NavMeny from './NavMenu';
+import NavLink from './NavLink';
+import Logo from '../img/Msab-logo.png';
+import './styles/nav-menu.css';
 
 export const Header = () => {
-  return (
-    <main>
-      <div className="topMenuContainer">
-        <ul className="topMenu">
-          <li className="topMenuList">
-            <i className="fas fa-phone" /> 08-5678904
-          </li>
-          <li className="topMenuList">
-            <i className="fa fa-at" /> info@msjoberg.se
-          </li>
-          <li className="topMenuList">
-            <i className="fa fa-envelope" /> Råsundavägen 79, Solna
-          </li>
-        </ul>
-      </div>
-      <NavMeny />
-    </main>
-  );
+	return (
+		<main>
+			<div className="topMenuContainer">
+				<ul className="topMenu">
+					<Link to="/">
+						<a className="nav-logo">
+							<img className="logo" src={Logo} alt="logo" />
+						</a>
+					</Link>
+					<li className="topMenuList">
+						<i className="fas fa-phone" /> 08-5678904
+					</li>
+
+					<li className="topMenuList">
+						<i className="fa fa-at" /> info@msjoberg.se
+					</li>
+					<li className="topMenuList">
+						<i className="fa fa-envelope" /> Råsundavägen 79, Solna
+					</li>
+				</ul>
+			</div>
+			<NavMeny />
+		</main>
+	);
 };
 
 /* <section className="headerCards">
