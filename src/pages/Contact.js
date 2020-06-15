@@ -19,31 +19,26 @@ export const Contact = () => {
 				</div>
 
 				<div className="contact-team">
-					<h2>Vi som jobbar här</h2>
+					<h2>Kontakta oss</h2>
 					<div className="team">
-						<h4>Mikael Sjöberg, grundare</h4>
+						<h4>Receptionen</h4>
 						<p>08-567 89 04</p>
-						<p>mikael@msjoberg@gmail.com</p>
+						<p>info@msjoberg@gmail.com</p>
 					</div>
 					<div className="team">
-						<h4>Mikael Sjöberg, grundare</h4>
+						<h4>Support</h4>
 						<p>08-567 89 04</p>
-						<p>mikael@msjoberg@gmail.com</p>
+						<p>support@msjoberg@gmail.com</p>
 					</div>
 					<div className="team">
-						<h4>Mikael Sjöberg, grundare</h4>
+						<h4>Lager</h4>
 						<p>08-567 89 04</p>
-						<p>mikael@msjoberg@gmail.com</p>
+						<p>lager@msjoberg@gmail.com</p>
 					</div>
 					<div className="team">
-						<h4>Mikael Sjöberg, grundare</h4>
+						<h4>Service</h4>
 						<p>08-567 89 04</p>
-						<p>mikael@msjoberg@gmail.com</p>
-					</div>
-					<div className="team">
-						<h4>Mikael Sjöberg, grundare</h4>
-						<p>08-567 89 04</p>
-						<p>mikael@msjoberg@gmail.com</p>
+						<p>service@msjoberg@gmail.com</p>
 					</div>
 				</div>
 				<ContactForm />

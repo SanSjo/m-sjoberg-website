@@ -1,4 +1,22 @@
 import React, { useState } from 'react';
+import { langService } from '../services/langService'
+
+const lang = langService.getStrings({
+	en: {
+		header: 'Contact us',
+		name: 'Name',
+		email: 'Email',
+		message: 'Message',
+		send: 'Send'
+	},
+	se: {
+		header: 'Kontakta oss',
+		name: 'Namn',
+		email: 'Email',
+		message: 'Meddelande',
+		send: 'Skicka'
+	}
+})
 
 export const ContactForm = () => {
 	const [name, setName] = useState('');
@@ -7,10 +25,10 @@ export const ContactForm = () => {
 
 	return (
 		<div className="contact-form">
-			<h2>Kontakta oss</h2>
+			<h2>{lang.header}</h2>
 			<form>
-				<label>Namn:</label>
-				<input
+				<label>{lang.name}</label>
+				<input className="input"
 					value={name}
 					placeholder="Enter Name"
 					type="text"
@@ -19,8 +37,8 @@ export const ContactForm = () => {
 					required
 				/>
 
-				<label>Email:</label>
-				<input
+				<label>{lang.email}</label>
+				<input className="input"
 					value={email}
 					placeholder="Enter Email"
 					type="email"
@@ -29,15 +47,17 @@ export const ContactForm = () => {
 					required
 				/>
 
-				<label>Meddelande:</label>
-				<input
-					value={text}
+				<label>{lang.message}</label>
+				<input className="input"
+				
 					placeholder="Meddelande"
 					type="text"
 					name="text"
 					row="10"
 					required
 				/>
+
+				<button type="submit" className="form-button">Skicka</button>
 			</form>
 		</div>
 	);

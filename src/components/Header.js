@@ -1,20 +1,26 @@
 import React from 'react';
 import './styles/header.css';
 import { Link } from 'react-router-dom';
-import NavMeny from './NavMenu';
+import { NavMenu } from './NavMenu';
 import NavLink from './NavLink';
 import Logo from '../img/Msab-logo.png';
 import './styles/nav-menu.css';
+import BurgerMenu from './BurgerMenu';
+import { Sidenav } from './Sidenav';
+import { langService } from '../services/langService'
+import { seFlag } from '../img/flags/se.png'
+import { gbFlag } from '../img/flags/gb.png'
 
 export const Header = () => {
 	return (
 		<main>
 			<div className="topMenuContainer">
+				{/* <BurgerMenu /> */}
 				<ul className="topMenu">
 					<Link to="/">
-						<a className="nav-logo">
+						<div className="nav-logo">
 							<img className="logo" src={Logo} alt="logo" />
-						</a>
+						</div>
 					</Link>
 					<li className="topMenuList">
 						<i className="fas fa-phone" /> 08-5678904
@@ -28,7 +34,7 @@ export const Header = () => {
 					</li>
 				</ul>
 			</div>
-			<NavMeny />
+			<NavMenu />
 		</main>
 	);
 };

@@ -21,7 +21,7 @@ const Slider = () => {
 	const [state, setState] = useState({
 		activeIndex: 0,
 		translate: 0,
-		transition: 0.45
+		transition: 0.45,
 	});
 
 	const { translate, transition, activeIndex } = state;
@@ -33,14 +33,14 @@ const Slider = () => {
 			return setState({
 				...state,
 				translate: 0,
-				activeIndex: 0
+				activeIndex: 0,
 			});
 		}
 
 		setState({
 			...state,
 			activeIndex: activeIndex + 1,
-			translate: (activeIndex + 1) * getWidth()
+			translate: (activeIndex + 1) * getWidth(),
 		});
 	};
 
@@ -49,14 +49,14 @@ const Slider = () => {
 			return setState({
 				...state,
 				translate: (images.length - 1) * getWidth(),
-				activeIndex: images.length - 1
+				activeIndex: images.length - 1,
 			});
 		}
 
 		setState({
 			...state,
 			translate: activeIndex - 1,
-			activeIndex: (activeIndex - 1) * getWidth()
+			activeIndex: (activeIndex - 1) * getWidth(),
 		});
 	};
 

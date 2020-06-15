@@ -12,11 +12,11 @@ export const Communication = () => {
 				<div className="sideMenu">
 					<div className="menu">
 						<h2 className="side-menu-header">Kommunikation</h2>
-						<p className="side-menu-para">Parror</p>
+						<p className="side-menu-para">4G Wifi Router</p>
+						<p className="side-menu-para">Midland komradio</p>
 						<p className="side-menu-para">Sena Headset</p>
-						<p className="side-menu-para">Telit Handsfree</p>
-						<p className="side-menu-para">Professionell 4G Wifi Router</p>
-						<p className="side-menu-para">Carcomm DASH2 mobilhållare</p>
+						<p className="side-menu-parag">Funkwerk antennförstärkning</p>
+						<p className="side-menu-para">GSM</p>
 					</div>
 				</div>
 				<div className="products">

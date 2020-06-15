@@ -8,6 +8,7 @@ import Telit from '../img/TelitHandsfree.jpg';
 import GPro from '../img/4G-PRO.jpg';
 import Carcomm from '../img/Carcomm.jpg';
 import { Categories } from './Categories';
+import { ProductMenu } from './ProductMenu';
 
 export const MegaMenu = () => {
 	return (

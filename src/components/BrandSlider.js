@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Slider from 'infinite-react-carousel';
 import './styles/clients.css';
 
@@ -24,7 +24,7 @@ export const BrandSlider = () => {
 		autoplayScroll: 1,
 		duration: 500,
 		pauseOnHover: true,
-		className: 'brand-slider'
+		className: 'brand-slider',
 	};
 	return (
 		<div className="brand-logo-slider">
@@ -72,3 +72,5 @@ export const BrandSlider = () => {
 		</div>
 	);
 };
+
+export default BrandSlider;

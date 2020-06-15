@@ -1,6 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
+const URL = 'https://api.fortnox.se/3/articles'
+const apiCode = 'f80671fb-8134-39b9-36fb-b5aa3cfa1802'
 
 export const CommProduct = props => {
+	const [authorized, setAuhorized] = useState(null)
+
+	useEffect(() => {
+		fetch(URL, {
+			method: 'GET',
+			headers: {
+				'Authorization-Code': apiCode,
+				'Client-Secret': 'mXgMlYHjpn',
+				'Content-Type': 'application/json',
+				'Accept': 'application/json'
+			}
+		})
+		.then((res) => res.json())
+		.then((json) => {
+			
+			setAuhorized(json)
+			console.log("json")
+		})
+	}, [authorized])
+
 	return (
 		<div className="productCards">
 			{/* <div className="hover-container">

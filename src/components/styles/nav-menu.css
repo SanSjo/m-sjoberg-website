@@ -1,12 +1,13 @@
 /* Navbar container */
 nav {
 	display: flex;
-	justify-content: space-around;
+
 	align-items: center;
 	justify-content: flex-start;
 	height: 80px;
 	margin-top: 0px;
-	background-color: #332d77;
+	background-color: white;
+	width: 100%;
 }
 
 .nav-logo {
@@ -15,7 +16,7 @@ nav {
 }
 
 .logo {
-	width: 80%;
+	width: 90%;
 }
 .navbar {
 	overflow: hidden;
@@ -31,7 +32,7 @@ nav {
 /* Links inside the navbar */
 .navbar .nav-button {
 	font-size: 16px;
-	color: white;
+	color: black;
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
@@ -70,6 +71,25 @@ nav {
 	height: 40px;
 	border-radius: 50%;
 	margin: 5px 20px 5px 5px;
+}
+
+.language-btn {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.lang-btn {
+	background-color: transparent;
+	border: none;
+	
+}
+
+.lang-img {
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	margin-right: 20px;
 }
 
 @media (max-width: 600px) {

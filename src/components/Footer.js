@@ -1,11 +1,19 @@
 /* eslint-disable indent */
 /* eslint-disable no-tabs */
-import React from 'react';
+import React, { useState } from 'react';
 import './styles/footer.css';
+import Moment from 'react-moment';
 import Iso from '../img/iso_sve.png';
 import Logo from '../img/Msab-logo.png';
+import {Link} from 'react-router-dom'
 
 export const Footer = () => {
+	const [year, setYear] = useState(new Date());
+
+	const getYear = () => {
+		setYear(new Date().setFullYear, 1000);
+	};
+
 	return (
 		<footer>
 			<div className="footerContainer">
@@ -40,26 +48,10 @@ export const Footer = () => {
 					<div className="footerContent">
 						<div className="footerContact">
 							<p className="footerContactHeader">Information</p>
-							<p className="footerLi">
-								<a className="footerA" href="#!">
-									Kontakt
-								</a>
-							</p>
-							<p className="footerLi">
-								<a className="footerA" href="#!">
-									Support
-								</a>
-							</p>
-							<p className="footerLi">
-								<a className="footerA" href="#!">
-									Miljöpolicy
-								</a>
-							</p>
-							<p className="footerLi">
-								<a className="footerA" href="#!">
-									Om oss
-								</a>
-							</p>
+							<Link className="footerLi" to="/Contact"><p className="footerLi">Kontakt</p></Link>
+							<Link className="footerLi" to="/Support"><p className="footerLi">Support</p></Link>
+							<Link className="footerLi" to="/About"><p className="footerLi">Miljöpolicy</p></Link>
+							<Link className="footerLi" to="/About"><p className="footerLi">Om oss</p></Link>
 						</div>
 					</div>
 				</div>
@@ -71,7 +63,9 @@ export const Footer = () => {
 
 			<div className="copyrightContainer">
 				<div className="footer-copyright">
-					<p className="copyright">© 2018 Copyright M sjoberg AB</p>
+					<p className="copyright">
+						© <span>{new Date().getFullYear()}</span> Copyright M sjoberg AB
+					</p>
 				</div>
 			</div>
 		</footer>

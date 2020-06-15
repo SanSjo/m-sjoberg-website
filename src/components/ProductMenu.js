@@ -4,7 +4,542 @@ import './styles/mega-menu.css';
 
 export const ProductMenu = props => {
 	return (
-		<div className="column">
+		<div className="dropdown">
+			<button type="button" className=" dropbtn nav-button">
+				KATEGORIER <i className="fa fa-caret-down" />
+			</button>
+			<div className="dropdown-content">
+				<div className="row">
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>B</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+
+					<div className="menu-dropdown">
+						<h3>A</h3>
+
+						<div className="menu-dropdown-content">
+							<div className="column">
+								<Link>
+									<p className="">Abonnemang - MetaTrak</p>
+								</Link>
+								<Link>
+									<p>Anafi - Drönare</p>
+								</Link>
+
+								<Link>
+									<p>Antenn</p>
+								</Link>
+
+								<Link>
+									<p>Antennförstärkare</p>
+								</Link>
+								<Link>
+									<p>Arbetsljus LED - LAP</p>
+								</Link>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	);
+};
+
+export default ProductMenu;
+
+{
+	/* <div className="column">
+      
 			<h3 className="productmenu-header">{props.title}</h3>
 			<Link to={props.link1}>
 				<p className="product-text">{props.product1}</p>{' '}
@@ -45,12 +580,10 @@ export const ProductMenu = props => {
 			<Link to={props.link13}>
 				<p className="product-text">{props.product13}</p>
 			</Link>
-		</div>
-	);
-};
-
-export default ProductMenu;
-
+		</div> */
+}
+{
+	/* 
 // <h3>{props.title}</h3>
 // 		<Link to={props.link1}>
 // 			<p>{props.product1}</p>
@@ -81,4 +614,5 @@ export default ProductMenu;
 // 		</Link>
 // 		<Link to={props.link10}>
 // 			<p>{props.product10}</p>
-// 		</Link>
+// 		</Link> */
+}

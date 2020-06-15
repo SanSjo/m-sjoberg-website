@@ -6,6 +6,8 @@
 	margin: 10px;
 	width: 99%;
 	background: lightgray;
+	position: relative;
+	z-index: -1;
 }
 
 .homecard-header-container {

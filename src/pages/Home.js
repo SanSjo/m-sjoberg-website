@@ -1,4 +1,7 @@
 import React from 'react';
+import ControlledCarousel from 'components/ControlledCarousel';
+import { Sidenav } from 'components/Sidenav';
+import { MainPage } from 'components/MainPage';
 import { Header } from '../components/Header';
 
 import Slider from '../components/Slider';
@@ -10,12 +13,8 @@ import { BrandSlider } from '../components/BrandSlider';
 export const Home = () => {
 	return (
 		<div>
-			<Header />
-			<Slider />
-			<HomeCards title="VÅRA PRODUKTER" />
-			<BrandSlider />
-			<HomeCards title="VÅRT ARBETE" />
-			<Footer />
+			{/* <Sidenav pageWrapId="page-wrap" /> */}
+			<MainPage />
 		</div>
 	);
 };
