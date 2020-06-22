@@ -2,41 +2,37 @@ import React from 'react';
 import './styles/header.css';
 import { Link } from 'react-router-dom';
 import { NavMenu } from './NavMenu';
-import NavLink from './NavLink';
+
 import Logo from '../img/Msab-logo.png';
 import './styles/nav-menu.css';
-import BurgerMenu from './BurgerMenu';
-import { Sidenav } from './Sidenav';
-import { langService } from '../services/langService'
-import { seFlag } from '../img/flags/se.png'
-import { gbFlag } from '../img/flags/gb.png'
+
 
 export const Header = () => {
-	return (
-		<main>
-			<div className="topMenuContainer">
-				{/* <BurgerMenu /> */}
-				<ul className="topMenu">
-					<Link to="/">
-						<div className="nav-logo">
-							<img className="logo" src={Logo} alt="logo" />
-						</div>
-					</Link>
-					<li className="topMenuList">
-						<i className="fas fa-phone" /> 08-5678904
-					</li>
+  return (
+    <main>
+      <div className="topMenuContainer">
+        {/* <BurgerMenu /> */}
+        <ul className="topMenu">
+          <Link to="/">
+            <div className="nav-logo">
+              <img className="logo" src={Logo} alt="logo" />
+            </div>
+          </Link>
+          <li className="topMenuList">
+            <i className="fas fa-phone" /> 08-5678904
+          </li>
 
-					<li className="topMenuList">
-						<i className="fa fa-at" /> info@msjoberg.se
-					</li>
-					<li className="topMenuList">
-						<i className="fa fa-envelope" /> Råsundavägen 79, Solna
-					</li>
-				</ul>
-			</div>
-			<NavMenu />
-		</main>
-	);
+          <li className="topMenuList">
+            <i className="fa fa-at" /> info@msjoberg.se
+          </li>
+          <li className="topMenuList">
+            <i className="fa fa-envelope" /> Råsundavägen 79, Solna
+          </li>
+        </ul>
+      </div>
+      <NavMenu />
+    </main>
+  );
 };
 
 /* <section className="headerCards">

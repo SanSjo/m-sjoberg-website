@@ -1,14 +1,9 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+
 import './styles/mega-menu.css';
-import { DropdownContent } from 'components/DropdownContent';
-import Parrot from '../img/mki9200_animering.gif';
-import Sena from '../img/senaHeadset.jpg';
-import Telit from '../img/TelitHandsfree.jpg';
-import GPro from '../img/4G-PRO.jpg';
-import Carcomm from '../img/Carcomm.jpg';
+
 import { Categories } from './Categories';
-import { ProductMenu } from './ProductMenu';
+
 
 export const MegaMenu = () => {
 	return (

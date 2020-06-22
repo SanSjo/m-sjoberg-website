@@ -1,3 +1,4 @@
+/* eslint-disable no-tabs */
 /* eslint-disable react/jsx-closing-bracket-location */
 import React from 'react';
 import './styles/home-cards.css';
@@ -6,29 +7,26 @@ import AsteroidSmart from '../img/AsteroidSmart_bild.jpg';
 import Multican from '../img/multican.jpg';
 import Anafi from '../img/AnafiSkycontroller.jpg';
 
-import { Cards } from '../components/Cards'
-
+import { Cards } from './Cards'
 
 export const HomeCards = () => {
+  return (
 
-	return (
-		
-		<section style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', marginTop: '5%'}}>
-		<Cards src={Parrot} />
-		<Cards src={AsteroidSmart} />
-		<Cards src={Multican} />
-		<Cards src={Anafi} />
-		<Cards src={Multican} />
-		<Cards src={Multican} />
-		<div>
-			<image src={require('../img/parrot-unika.jpg')} />
-		</div>
-		</section>
-	);
+    <section style={{ display: 'flex', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', marginTop: '5%' }}>
+      <Cards header="" src={Parrot} text="" />
+      <Cards src={AsteroidSmart} />
+      <Cards src={Multican} />
+      <Cards src={Anafi} />
+      <Cards src={Multican} />
+      <Cards src={Multican} />
+      <div>
+        <img src={require('../img/parrot-unika.jpg')} alt="parrot" />
+      </div>
+    </section>
+  );
 };
 
 export default HomeCards;
-
 
 // 	<div className="homecard-header-container">
 // 	<h2 className="homecard-header">– {props.title} –</h2>
@@ -60,7 +58,6 @@ export default HomeCards;
 // 		</div>
 // 	</div>
 
-
 // 	<div className="card-product">
 // 		<div className="hover-container">
 // 			<button type="button" src="#" className="btn btn-primary">
@@ -86,7 +83,6 @@ export default HomeCards;
 // 		</div>
 // 	</div>
 
-
 // 	<div className="card-product">
 
 // 		<div className="view overlay">
@@ -104,7 +100,6 @@ export default HomeCards;
 // 		<div className="title-container">
 // 			<h4 className="card-title">BACKVARNING</h4>
 // 		</div>
-
 
 // 		<div className="card-body">
 // 			<p className="card-text">
