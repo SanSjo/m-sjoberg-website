@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import './styles/mega-menu.css';
 import { NavLink } from 'react-router-dom';
-
 import DropdownColumnNav from './DropdownColumnNav';
 
 export const Categories = () => {

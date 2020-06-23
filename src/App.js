@@ -7,6 +7,7 @@ import { ReverseWarning } from './pages/ReverseWarning';
 import { OtherProducts } from './pages/OtherProducts';
 import { Contact } from './pages/Contact';
 import { About } from './pages/About';
+import { SingleProductPage } from 'components/SingleProductPage';
 
 export const App = () => {
 	return (
@@ -32,6 +33,9 @@ export const App = () => {
 				</Route>
 				<Route path="/About" exact>
 					<About />
+				</Route>
+				<Route path="/SingleProductPage/:itemId">
+					<SingleProductPage />
 				</Route>
 			</Switch>
 		</BrowserRouter>

@@ -6,7 +6,6 @@ import { NavMenu } from './NavMenu';
 import Logo from '../img/Msab-logo.png';
 import './styles/nav-menu.css';
 
-
 export const Header = () => {
   return (
     <main>

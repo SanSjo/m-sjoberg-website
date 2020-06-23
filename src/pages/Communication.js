@@ -4,6 +4,7 @@ import React, { useEffect, useState } from 'react';
 import dotenv from 'dotenv';
 import '../components/styles/communication.css';
 import axios from 'axios';
+import { Link } from 'react-router-dom'
 import Sena from '../img/senaHeadset.jpg';
 import { Header } from '../components/Header';
 import { CommProduct } from '../components/CommProduct';
@@ -20,6 +21,29 @@ export const Communication = () => {
   console.log(article)
 
   useEffect(() => {
+    const limitPerPage = 20
+
+    const apiURL = 'https://cors-anywhere.herokuapp.com/https://api.fortnox.se/3/articles'
+  
+    const getArticles = async function(pageNo = 1) {
+      const actualUrl = apiURL + `?page=${pageNo}&limit=${limitPerPage}`;
+      const apiResults = await fetch(actualUrl)
+      .then(resp => {
+        return resp.json()
+      });
+      return apiResults;
+    }
+  
+    const getEntireUserList = async function(pageNo = 1) {
+      const results = await getEntireUserList(pageNo);
+      console.log("Retrieving data from API for page: " + pageNo)
+      if (results.length > 0) {
+        return results.concat(await getEntireUserList(pageNo + 1));
+      } else {
+        return results;
+      }
+    }
+
     fetch('https://cors-anywhere.herokuapp.com/https://api.fortnox.se/3/articles', {
       method: 'GET',
       headers: {
@@ -51,11 +75,12 @@ export const Communication = () => {
           </div>
         </div>
         <div className="products">
-		{article.map((item) => (
- 			<CommProduct img={Sena} title="Sena Headset" article={item} />
-		))}
-        
 
+    {article.filter((product) => product.Description.startsWith('A')).map((item, itemId) => (
+
+       <CommProduct key={itemId} img={Sena} title="Sena Headset" article={item} />
+    
+		))}
         </div>
       </section>
     </>
