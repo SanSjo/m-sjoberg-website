@@ -9,6 +9,7 @@ import NavLink from './NavLink';
 import { langService } from '../services/langService'
 import { seFlag } from '../img/flags/se.png'
 import { gbFlag } from '../img/flags/gb.png'
+import Search from './Search';
 
 export const NavMenu = () => {
   const [open, setOpen] = useState(false);
@@ -119,7 +120,8 @@ export const NavMenu = () => {
       </div>
 
       {/* Search form  */}
-      <div>
+      <Search />
+      {/* <div>
         <form className="search">
           <input
             className="search-bar"
@@ -130,7 +132,7 @@ export const NavMenu = () => {
             <i className="fa fa-search" />
           </button>
         </form>
-      </div>
+      </div> */}
     </nav>
   );
 };

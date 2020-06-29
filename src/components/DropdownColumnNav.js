@@ -1,13 +1,14 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 export const DropdownColumnNav = (props) => {
+
   return (
     <div className="column">
       <h3>{props.header}</h3>
-      <NavLink to="./SingleProductPage/BT10-01">
+      <Link to="./SingleProductPage/">
         <p className="menu-item">{props.menuItem1}</p>
-      </NavLink>
+      </Link>
       <NavLink to="./SingleProductPage/BT10-01">
         <p className="menu-item">{props.menuItem2}</p>
       </NavLink>
