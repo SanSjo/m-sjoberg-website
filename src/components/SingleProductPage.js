@@ -15,9 +15,10 @@ export const SingleProductPage = () => {
   const { itemId } = useParams()
   const [article, setArticle] = useState([])
   const [articleImg, setArticleImg] = useState('')
-  const [fileId, setFileId] = useState('')
+  const [fileId, setFileId] = useState([])
   console.log(article)
   console.log(fileId)
+  console.log(articleImg)
 
   useEffect(() => {
     fetch(`https://cors-anywhere.herokuapp.com/https://api.fortnox.se/3/articles/${itemId}`, {
@@ -38,7 +39,7 @@ export const SingleProductPage = () => {
   }, [itemId])
 
   useEffect(() => {
-    fetch('https://cors-anywhere.herokuapp.com/https://api.fortnox.se/3/articlefileconnections/8c05c536-c110-402d-82da-60f25f6b0e1c', {
+    fetch(`https://cors-anywhere.herokuapp.com/https://api.fortnox.se/3/articlefileconnections/?articlenumber=${itemId}`, {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
@@ -49,10 +50,13 @@ export const SingleProductPage = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        setFileId(data.ArticleFileConnection.FileId)
-        console.log(data.ArticleFileConnection.FileId)
+        setFileId(data.ArticleFileConnections[0].FileId)
+        console.log(data.ArticleFileConnections[0].FileId)
+    
       })
-  }, [])
+  }, [itemId])
+
+ 
 
 
   return (
@@ -61,9 +65,11 @@ export const SingleProductPage = () => {
       {/* <SingleBreadCrumbs active={article} /> */}
       <section className="single-product-container">
         <div>
-          <img style={{ width: '50%' }} src={Sena} alt="product" />
+          <img style={{ width: '50%' }} src={articleImg} alt="product" />
+
           <SingleProductImage fileid={fileId} />
         </div>
+      
         <div>
           <h1>{article.Description} </h1>
           <h5>Pris {article.SalesPrice} SEK</h5>

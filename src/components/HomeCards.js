@@ -19,9 +19,9 @@ export const HomeCards = () => {
       <Cards src={Anafi} />
       <Cards src={Multican} />
       <Cards src={Multican} />
-      <div>
+      {/* <div>
         <img src={require('../img/parrot-unika.jpg')} alt="parrot" />
-      </div>
+      </div> */}
     </section>
   );
 };

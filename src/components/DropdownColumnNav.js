@@ -1,17 +1,39 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { NavLink, Link } from 'react-router-dom';
 
+const accessToken = 'f504da56-d684-4428-90b7-49a8a7990c97'
+
+const clientSecret = 'mXgMlYHjpn'
+
 export const DropdownColumnNav = (props) => {
+
+  const [article, setArticle] = useState([])
+
+  useEffect(() => {
+  fetch('https://cors-anywhere.herokuapp.com/https://api.fortnox.se/3/articles/', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+      'Access-Token': accessToken,
+      'Client-Secret': clientSecret
+    }
+  })
+    .then((res) => res.json())
+  .then((data) => {
+    setArticle(data.Articles.ArticleNumber)
+  })
+}, [])
 
   return (
     <div className="column">
       <h3>{props.header}</h3>
-      <Link to="./SingleProductPage/">
+      <Link to={'./SingleProductPage/BT10-01'}>
         <p className="menu-item">{props.menuItem1}</p>
       </Link>
-      <NavLink to="./SingleProductPage/BT10-01">
+      <Link to="./SingleProductPage/BT10-01">
         <p className="menu-item">{props.menuItem2}</p>
-      </NavLink>
+      </Link>
       <div className="sub-dropdown">
         <div className="menu-item-dropdown">
           <p className="menu-item">Parrot Handsfree</p>

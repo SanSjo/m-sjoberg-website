@@ -1,23 +1,46 @@
 /* eslint-disable no-tabs */
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link, useParams } from 'react-router-dom';
 import { MegaMenu } from './MegaMenu';
 import './styles/nav-menu.css';
 import Logo from '../img/Msab-logo.png';
 import NavLink from './NavLink';
-
 import { langService } from '../services/langService'
 import { seFlag } from '../img/flags/se.png'
 import { gbFlag } from '../img/flags/gb.png'
 import Search from './Search';
 
+const accessToken = 'f504da56-d684-4428-90b7-49a8a7990c97'
+
+const clientSecret = 'mXgMlYHjpn'
+
 export const NavMenu = () => {
+  const { itemId } = useParams()
+  const [article, setArticle] = useState([])
   const [open, setOpen] = useState(false);
   const langObj = langService.getLangObj();
 
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
  const toggle = () => setDropdownOpen((prevState) => !prevState);
+
+ useEffect(() => {
+  fetch(`https://cors-anywhere.herokuapp.com/https://api.fortnox.se/3/articles/${itemId}`, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json',
+      Accept: 'application/json',
+      'Access-Token': accessToken,
+      'Client-Secret': clientSecret
+    }
+  })
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data)
+      setArticle(data.Article)
+      console.log(data)
+    })
+}, [itemId])
 
   return (
     <nav>

@@ -25,11 +25,12 @@ export const BrandSlider = () => {
 		duration: 500,
 		pauseOnHover: true,
 		className: 'brand-slider',
+		
 	};
 	return (
 		<div className="brand-logo-slider">
 			<div className="header-container">
-				<h2 className="brand-header">– VÅRA VARUMÄRKEN –</h2>
+				{/* <h2 className="brand-header"></h2> */}
 			</div>
 			<Slider {...settings}>
 				<div className="brand-logo">
@@ -60,7 +61,8 @@ export const BrandSlider = () => {
 					<img className="brand" src={Lap} alt="logo" />
 				</div>
 				<div className="brand-logo">
-					<img className="brand" src={Meta} alt="logo" />
+					
+					<img className="brand-meta" src={Meta} alt="logo" />
 				</div>
 				<div className="brand-logo">
 					<img className="brand" src={MetaTrak} alt="logo" />

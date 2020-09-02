@@ -7,6 +7,7 @@ const clientSecret = 'mXgMlYHjpn'
 export const SingleProductImage = (props) => {
   const [articleImg, setArticleImg] = useState('')
   console.log(articleImg)
+  console.log(props.fileid)
 
   useEffect(() => {
     fetch(`https://cors-anywhere.herokuapp.com/https://api.fortnox.se/3/archive/${props.fileid}`, {
@@ -23,7 +24,7 @@ export const SingleProductImage = (props) => {
         setArticleImg(data)
         console.log(data)
       })
-  }, [])
+  }, [props.fileid])
 
   return (
     <div>

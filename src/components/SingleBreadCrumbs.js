@@ -13,7 +13,7 @@ export const SingleBreadCrumbs = (props) => {
       <Link to="/" color="inherit" onClick={handleClick}>
         Hem
       </Link>
-      <Link to="/Communication" color="inherit" >
+      <Link to="/Communication" color="inherit">
         Produkter
       </Link>
       <p

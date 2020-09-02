@@ -1,12 +1,17 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import Parrot from '../img/mki9200_animering.gif';
 import Sena from '../img/senaHeadset.jpg';
 import Telit from '../img/TelitHandsfree.jpg';
 import GPro from '../img/4G-PRO.jpg';
 import Carcomm from '../img/Carcomm.jpg';
+import { useEffect, useState } from 'react';
+
+
 
 export const DropdownContent = (props) => {
+  
+
   return (
     <div className="column">
       <Link to={props.link}>
