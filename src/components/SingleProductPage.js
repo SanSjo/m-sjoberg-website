@@ -52,12 +52,8 @@ export const SingleProductPage = () => {
       .then((data) => {
         setFileId(data.ArticleFileConnections[0].FileId)
         console.log(data.ArticleFileConnections[0].FileId)
-    
       })
   }, [itemId])
-
- 
-
 
   return (
     <>
@@ -69,14 +65,12 @@ export const SingleProductPage = () => {
 
           <SingleProductImage fileid={fileId} />
         </div>
-      
         <div>
           <h1>{article.Description} </h1>
           <h5>Pris {article.SalesPrice} SEK</h5>
           <button type="button">Mer information</button>
           <button type="button">Beställ produkt</button>
         </div>
-       
       </section>
 
       <Footer />

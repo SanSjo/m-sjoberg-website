@@ -46,8 +46,7 @@ export const Search = () => {
       if (!query) return setArticle([])
 
       await sleep(350)
-      if (currentQuery) {
-        
+      if (currentQuery) {  
         setArticle(await search(query, controller))
         console.log('article', article)
       }
