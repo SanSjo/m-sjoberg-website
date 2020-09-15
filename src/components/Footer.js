@@ -64,7 +64,7 @@ export const Footer = () => {
 			<div className="copyrightContainer">
 				<div className="footer-copyright">
 					<p className="copyright">
-						© <span>{new Date().getFullYear()}</span> Copyright M sjoberg AB
+						© <span>{new Date().getFullYear()}</span> Copyright M Sjoberg AB
 					</p>
 				</div>
 			</div>
