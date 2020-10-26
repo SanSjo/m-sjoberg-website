@@ -19,16 +19,23 @@ export const SingleProductImage = (props) => {
         'Client-Secret': clientSecret
       }
     })
-      .then((res) => res.json())
-      .then((data) => {
-        setArticleImg(data)
-        console.log(data)
+
+      .then((res) => {
+        setArticleImg(res.url)
+        // .then((res) => {
+        //   setArticleImg(res)
+        //   console.log(articleImg)
+        // })
+        // let newUrl = articleImg;
+        // newUrl = newUrl.replace(articleImg, 'https://api.fortnox.se/3/archive/8c05c536-c110-402d-82da-60f25f6b0e1c')
+        // setArticleImg(newUrl)
       })
+      .catch((err) => console.log(err))
   }, [props.fileid])
 
   return (
     <div>
-      <img src={articleImg} alt="product" />
+      <img src={articleImg} alt="product" className="img" />
     </div>
   )
 }

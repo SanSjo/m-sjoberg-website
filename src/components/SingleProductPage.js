@@ -14,11 +14,10 @@ const clientSecret = 'mXgMlYHjpn'
 export const SingleProductPage = () => {
   const { itemId } = useParams()
   const [article, setArticle] = useState([])
-  const [articleImg, setArticleImg] = useState('')
+  // const [articleImg, setArticleImg] = useState('')
   const [fileId, setFileId] = useState([])
   console.log(article)
   console.log(fileId)
-  console.log(articleImg)
 
   useEffect(() => {
     fetch(`https://cors-anywhere.herokuapp.com/https://api.fortnox.se/3/articles/${itemId}`, {
@@ -52,6 +51,7 @@ export const SingleProductPage = () => {
       .then((data) => {
         setFileId(data.ArticleFileConnections[0].FileId)
         console.log(data.ArticleFileConnections[0].FileId)
+        
       })
   }, [itemId])
 
@@ -61,7 +61,7 @@ export const SingleProductPage = () => {
       {/* <SingleBreadCrumbs active={article} /> */}
       <section className="single-product-container">
         <div>
-          <img style={{ width: '50%' }} src={articleImg} alt="product" />
+          {/* <img style={{ width: '50%' }} src={articleImg} alt="product" /> */}
 
           <SingleProductImage fileid={fileId} />
         </div>
