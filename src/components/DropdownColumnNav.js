@@ -1,34 +1,33 @@
-import React, {useEffect, useState} from 'react';
-import { NavLink, Link } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 // const accessToken = 'f504da56-d684-4428-90b7-49a8a7990c97'
 
 // const clientSecret = 'mXgMlYHjpn'
 
 export const DropdownColumnNav = (props) => {
-
 //   const [article, setArticle] = useState([])
 
-//   useEffect(() => {
-//   fetch('https://cors-anywhere.herokuapp.com/https://api.fortnox.se/3/articles/', {
-//     method: 'GET',
-//     headers: {
-//       'Content-Type': 'application/json',
-//       Accept: 'application/json',
-//       'Access-Token': accessToken,
-//       'Client-Secret': clientSecret
-//     }
-//   })
-//     .then((res) => res.json())
-//   .then((data) => {
-//     setArticle(data.Articles.ArticleNumber)
-//   })
-// }, [])
+  //   useEffect(() => {
+  //   fetch('https://cors-anywhere.herokuapp.com/https://api.fortnox.se/3/articles/', {
+  //     method: 'GET',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //       Accept: 'application/json',
+  //       'Access-Token': accessToken,
+  //       'Client-Secret': clientSecret
+  //     }
+  //   })
+  //     .then((res) => res.json())
+  //   .then((data) => {
+  //     setArticle(data.Articles.ArticleNumber)
+  //   })
+  // }, [])
 
   return (
     <div className="column">
       <h3>{props.header}</h3>
-      <Link to={'./SingleProductPage/BT10-01'}>
+      <Link to="./SingleProductPage/BT10-01">
         <p className="menu-item">{props.menuItem1}</p>
       </Link>
       <Link to="./SingleProductPage/BT10-01">

@@ -16,7 +16,7 @@ export const SingleProductImage = (props) => {
         'Content-Type': 'application/json',
         Accept: 'application/json',
         'Access-Token': accessToken,
-        'Client-Secret': clientSecret,
+        'Client-Secret': clientSecret
       }
     })
 
