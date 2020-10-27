@@ -4,10 +4,12 @@ import { Link, useParams } from 'react-router-dom';
 import { MegaMenu } from './MegaMenu';
 import './styles/nav-menu.css';
 import Logo from '../img/Msab-logo.png';
+// eslint-disable-next-line import/no-named-as-default
 import NavLink from './NavLink';
 import { langService } from '../services/langService'
-import { seFlag } from '../img/flags/se.png'
-import { gbFlag } from '../img/flags/gb.png'
+// import { seFlag } from '../img/flags/se.png'
+// import { gbFlag } from '../img/flags/gb.png'
+// eslint-disable-next-line import/no-named-as-default
 import Search from './Search';
 
 const accessToken = 'f504da56-d684-4428-90b7-49a8a7990c97'
@@ -16,31 +18,32 @@ const clientSecret = 'mXgMlYHjpn'
 
 export const NavMenu = () => {
   const { itemId } = useParams()
-  const [article, setArticle] = useState([])
+  // const [article, setArticle] = useState([])
   const [open, setOpen] = useState(false);
-  const langObj = langService.getLangObj();
+  // const langObj = langService.getLangObj();
 
-  const [dropdownOpen, setDropdownOpen] = useState(false);
+  // const [dropdownOpen, setDropdownOpen] = useState(false);
 
- const toggle = () => setDropdownOpen((prevState) => !prevState);
+  //  const toggle = () => setDropdownOpen((prevState) => !prevState);
 
- useEffect(() => {
-  fetch(`https://cors-anywhere.herokuapp.com/https://api.fortnox.se/3/articles/${itemId}`, {
-    method: 'GET',
-    headers: {
-      'Content-Type': 'application/json',
-      Accept: 'application/json',
-      'Access-Token': accessToken,
-      'Client-Secret': clientSecret
-    }
-  })
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data)
-      setArticle(data.Article)
-      console.log(data)
-    })
-}, [itemId])
+  // useEffect(() => {
+  // // eslint-disable-next-line indent
+  // fetch(`https://cors-anywhere.herokuapp.com/https://api.fortnox.se/3/articles/${itemId}`, {
+  //     method: 'GET',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //       Accept: 'application/json',
+  //       'Access-Token': accessToken,
+  //       'Client-Secret': clientSecret
+  //     }
+  //   })
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       console.log(data)
+  //       setArticle(data.Article)
+  //       console.log(data)
+  //     })
+  // }, [itemId])
 
   return (
     <nav>
@@ -126,15 +129,17 @@ export const NavMenu = () => {
               </DropdownMenu> */}
 
       <div className="language-btn">
-        <button type="submit" className="lang-btn" onClick={(e) => { langService.setLang('se', this) }}>
+        <button type="submit" className="lang-btn" onClick={() => { langService.setLang('se', this) }}>
           <img
+            // eslint-disable-next-line global-require
             src={require('../img/flags/se.png')}
             alt="Swedish"
             width="20"
             className="lang-img" />
         </button>
-        <button type="submit" className="lang-btn" onClick={(e) => { langService.setLang('en', this) }}>
+        <button type="submit" className="lang-btn" onClick={() => { langService.setLang('en', this) }}>
           <img
+            // eslint-disable-next-line global-require
             src={require('../img/flags/gb.png')}
             alt="English"
             width="20"
@@ -143,7 +148,10 @@ export const NavMenu = () => {
       </div>
 
       {/* Search form  */}
-      <Search />
+      <div>
+        <Search />
+      </div>
+      
       {/* <div>
         <form className="search">
           <input

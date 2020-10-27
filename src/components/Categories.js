@@ -1,3 +1,4 @@
+/* eslint-disable import/no-named-as-default */
 /* eslint-disable no-tabs */
 import React, { useState } from 'react';
 import './styles/mega-menu.css';
@@ -21,7 +22,7 @@ export const Categories = () => {
         <div className="dropdown-content">
           <div className="row">
             <DropdownColumnNav
-              header="Bluetooth & Headset"
+              header="Bluetooth and Headset"
               menuItem1="Sena Headset"
               menuItem2="OnCarDisplay Handsfree"
               menuItem3="Handsfree MUTE kablar"
