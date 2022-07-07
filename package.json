@@ -22,7 +22,7 @@
 		"google-maps-react": "^2.0.6",
 		"infinite-react-carousel": "^1.2.11",
 		"mdbreact": "^4.25.5",
-		"moment": "^2.24.0",
+		"moment": "^2.29.4",
 		"moment-timezone": "^0.5.28",
 		"react": "^16.13.1",
 		"react-bootstrap": "^1.0.1",
